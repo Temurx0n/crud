@@ -1,0 +1,54 @@
+body {
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 1440px;
+    min-height: 300px;
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+    box-shadow: #0e1e251f 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+nav {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background: linear-gradient(140deg, #420bbb, #FB36F4);
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    list-style: none;
+}
+
+nav ul .li {
+    text-decoration: none;
+}
+
+nav ul li {
+    font-size: 1.4rem;
+    padding: 20px;
+    transition: all .3s ease;
+    cursor: grab;
+    color: #FFFFFF;
+}
+
+nav ul li:hover {
+    color: orange;
+}
+
+#btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: transparent;
+    color: #9f0cbc;
+    cursor: pointer;
+    text-transform: capitalize;
+}

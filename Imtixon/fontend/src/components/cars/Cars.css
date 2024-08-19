@@ -1,0 +1,314 @@
+.Modal {
+    width: 100%;
+    height: 200dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.overGround {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #444;
+    opacity: .7;
+}
+
+.modal {
+    background-color: #fff;
+    width: 420px;
+    position: absolute;
+    top: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.close {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #666;
+    background-color: transparent;
+}
+
+.close p {
+    width: 29px;
+    height: 28px;
+    background-color: #e1e1f0;
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close p:hover {
+    background-color: crimson;
+    color: lightgreen;
+}
+
+.modal h2 {
+    padding: 0 0 10px 15px;
+    text-align: center;
+}
+
+.modal form {
+    display: grid;
+    place-items: center;
+}
+
+.modal input {
+    width: 85%;
+    margin: 10px auto 10px auto;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: #e9effa;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.center_t {
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.modal .btn {
+    width: 85%;
+    background-color: #7000FF;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 0 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.modal .btn:hover {
+    background-color: #5000FF;
+}
+
+.last_text {
+    text-align: center;
+    margin: 90px 0 0 0;
+    font-size: 14.5px;
+    padding: 0 40px;
+    line-height: 20px;
+    color: #111;
+    cursor: pointer;
+}
+
+.last_text span {
+    color: dodgerblue;
+}
+
+.all_cards {
+    padding: 20px 30px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+#red {
+    background-color: #F0F0FF;
+    margin: 0 0 0 0;
+}
+
+.turkum {
+    border: none;
+    outline: none;
+    text-align: left;
+    background-color: #fff;
+    color: #666;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    border-radius: 5px;
+    max-width: 240px;
+    transition: all .2s ease;
+    line-height: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.turkum:hover,
+#red:hover {
+    background-color: #e2e2f2;
+    cursor: pointer;
+}
+
+
+.card {
+    width: 227px;
+    transition: all .4s ease;
+    cursor: pointer;
+    height: 450px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.card:hover .top_card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 110%;
+}
+
+.top_card {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.top_card img {
+    height: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s ease;
+}
+
+.yurak {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    color: #f309cc;
+}
+
+.card:hover .yurak {
+    background-color: transparent;
+}
+
+.yurak:hover {
+    color: crimson;
+}
+
+.aksiya {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #5000aa;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+.bottom_card {
+    background-color: transparent;
+}
+
+.bottom_card h4 {
+    color: #1f2026;
+    font-size: 12.8px;
+    font-weight: 500;
+    width: 220px;
+    padding: 10px 0 0 10px;
+    line-height: 18px;
+}
+
+.tiny {
+    font-size: 11.2px;
+    color: #8b8e99;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.yellow_p {
+    background-color: yellow;
+    max-width: 130px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding: 5px;
+    font-size: 11px;
+    color: #1f2026;
+}
+
+.delete_text {
+    color: #8b8e99;
+    font-size: 11.2px;
+    text-decoration: line-through;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.price {
+    margin-left: 10px;
+    color: #1f2026;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+/* //////////////////////////////////////////////////////////// */
+
+.btn_cool {
+    padding: 10px 20px;
+    background-color: rgb(224, 13, 243);
+    border-radius: 5px;
+    color: #fff;
+    cursor: grab;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid transparent;
+    margin: 15px;
+    transition: .3s;
+}
+
+.btn_cool:hover {
+    background-color: transparent;
+    color: rgb(224, 13, 243);
+    border-color: rgb(224, 13, 243);
+}
+
+#del_btn {
+    color: crimson;
+    font-size: 30px;
+    cursor: grabbing;
+}
+
+#edit_btn {
+    color: blue;
+    font-size: 30px;
+    margin: 12px 0 -7px 5px;
+    cursor: grabbing;
+}
